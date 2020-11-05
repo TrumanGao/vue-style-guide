@@ -20,8 +20,6 @@ src
       -- UserContacts.vue
 ```
 
-
-
 ## 二、组件规范
 
 ### 组件命名
@@ -83,3 +81,31 @@ src
 1. 图片资源
 如果本地图片资源较多，按照模块放置在独立文件夹。文件夹命名与模块保持一致        
 ![img](/img/img.jpg)
+
+## 四、样式（css / sass / less）规范
+1. 组件样式加上作用域 scoped，防止样式污染
+2. 页面根节点样式类，以 文件名称开头，以 page 结尾
+```js
+// Library.vue
+<template>
+    <div class="library-page">
+    </div>
+</template>
+...
+<style scoped>
+.library-page{}
+<style>
+```
+
+3. 组件根节点样式类，以组件名称命名
+```js
+// login-item.vue
+<template>
+    <div class="login-item">
+    </div>
+</template>
+...
+<style scoped>
+.login-item{}
+<style>
+```
