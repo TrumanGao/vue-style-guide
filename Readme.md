@@ -50,7 +50,7 @@ src
 1. 接口文件统一置于根目录下 api 文件夹
 2. 封装 request.js / http.js 文件处理网络请求配置
 3. 接口封装以业务类型划分
-3. 接口文件命名以 api 开头，以业务类型结尾
+4. 接口文件命名以 api 开头，以业务类型结尾
 ```js
 src
   -- api
@@ -58,20 +58,6 @@ src
     -- apiAccount.js
     -- apiGoods.js
     -- apiLibrary.js
-```
-
-## 其他资源规范
-1. 图片资源
-如果本地图片资源较多，按照模块放置在独立文件夹。文件夹命名与模块保持一致
-```js
-src
-  -- assets
-    -- img
-      -- Home
-        -- logo.png
-        -- background.png
-      -- User
-        -- defaultAvatar.png
 ```
 
 ## 四、样式（css / sass / less）规范
@@ -101,7 +87,7 @@ src
 .the-login{}
 <style>
 ```
-4. 全局样式文件放置在 静态资源文件夹下 style 文件夹内
+5. 全局样式文件放置在 静态资源文件夹下 style 文件夹内
 ```js
 src
   -- assets
@@ -111,6 +97,31 @@ src
     -- style
       -- global.css
       -- elementUI.css
+```
+
+## 五、其他资源规范
+1. 图片资源
+如果本地图片资源较多，按照模块放置在独立文件夹。文件夹命名与模块保持一致
+```js
+src
+  -- assets
+    -- img
+      -- Home
+        -- logo.png
+        -- background.png
+      -- User
+        -- defaultAvatar.png
+```
+2. 工具函数 / 常量
+服务于整个项目的 工具函数 和 常量，统一放置在根目录下的 utils 文件夹
+```js
+src
+  -- utils
+    -- index.js // 工具函数
+    -- code.js // 定义的请求接口返回状态码常量
+    -- cache.js // 定义的本地存储键名常量
+  -- views
+  ...
 ```
 
 ## 扩展阅读
