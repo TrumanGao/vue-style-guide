@@ -28,11 +28,11 @@ views
   -- Library
     -- Library.vue
     -- components
-  	  -- library-upload.veu
-  	  -- library-breadcrubm.vue
+      -- library-upload.veu
+      -- library-breadcrubm.vue
   -- User
     -- components
-	  -- user-info-form.vue
+      -- user-info-form.vue
 ```
 4. 全局组件：统一放置在根目录下的 components 文件夹
 - 4.1 基础组件：应用特定样式和约定，展示类的、无逻辑的或无状态的组件，以 base 前缀，以功能命名
@@ -41,7 +41,7 @@ views
 src
   -- components
     -- base-button.vue
-	-- base-input.vue
+    -- base-input.vue
     -- the-login.vue
 ```
 **注意：如两个以上模块复用，即抽离为全局组件** 
@@ -67,11 +67,11 @@ src
 src
   -- assets
     -- img
-	  -- Home
-	    -- logo.png
-		-- background.png
-	  -- User
-	    -- defaultAvatar.png
+      -- Home
+        -- logo.png
+        -- background.png
+      -- User
+        -- defaultAvatar.png
 ```
 
 ## 四、样式（css / sass / less）规范
@@ -106,9 +106,11 @@ src
 src
   -- assets
     -- img
-	  -- User
-	    -- defaultAvatar.png
-	-- style
-	  -- global.css
-	  -- elementUI.css
+      -- User
+        -- defaultAvatar.png
+    -- style
+      -- global.css
+      -- elementUI.css
 ```
+
+[扩展阅读：Vue.js 风格指南](https://cn.vuejs.org/v2/style-guide/)
