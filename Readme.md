@@ -7,7 +7,7 @@
 4. 模块内其他页面，以模块名开头，以具体业务名称结尾
 ```js
 src
- -- views
+  -- views
     -- Home
       -- Home.vue
     -- Library
@@ -113,4 +113,5 @@ src
       -- elementUI.css
 ```
 
-[扩展阅读：Vue.js 风格指南](https://cn.vuejs.org/v2/style-guide/)
+## 扩展阅读
+[风格指南 — Vue.js](https://cn.vuejs.org/v2/style-guide/)
